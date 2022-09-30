@@ -1,27 +1,27 @@
-a {
-    text-decoration: none;
-    color: black;
-    padding-right: 20px;
+* {
+    box-sizing: border-box;
 }
 
-    a:visited {
-        color: black;
-    }
-
-    a:hover {
-        color: red;
-    }
-
-#logo {
-    height: 30px;
-    padding-right: 20px;
+div {
+    padding: 10px;
+    background-color: #f6f6f6;
+    overflow: hidden;
 }
 
-#nav {
-    text-align: center;
+input[type="text"],
+textarea,
+select {
+    font: 17px Calibri;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-
-
-
-
+input[type="button"] {
+    font: 17px Calibri;
+    width: auto;
+    float: right;
+    cursor: pointer;
+    padding: 7px;
+}

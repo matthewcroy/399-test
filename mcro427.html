@@ -1,76 +1,43 @@
 ﻿<!DOCTYPE html>
-<html>
-
 <head>
     <link rel="stylesheet" href="mcro427.css">
     <script defer="true" src="mcro427.js"></script>
     <link rel="icon" type="image/x-icon" href="https://cws.auckland.ac.nz/gas/api/FavIcon">
 </head>
-
+    
+</head>
 <body>
-    <div id="nav">
-        <img id="logo" src="https://cws.auckland.ac.nz/gas/api/Logo" />
-        <a href="#" onclick="home()" href="">Home</a>
-        <a href="#" onclick="shop()" href="">Shop</a>
-        <a href="#" onclick="game()" href="">Game</a>
-        <a href="#" onclick="register()" href="">Register</a>
-        <a href="#" id="loginbutton" onclick="login()">Login</a>
-        <a href="#" style="display: none;" id="logoutbutton" onclick="logout()"></a>
-        <a href="#" onclick="shop()" href="">Shop</a>
-        <a href="#" onclick="comment()" href="">Comment Book</a>
-    </div>
 
-    <div id="home">
-        <h1>Welcome to the game academy.</h1>
-    </div>
-
-
-    <div id="game">
-        <h1>Welcome to the game.</h1>
-    </div>
-
-    <div id="shop">
-        <h1>Welcome to the shop.</h1>
-    </div>
-
-    <div id="register">
-        <h1>Make an Account</h1>
-        <form>
-            <label>Username</label>
-            <input id="username">
-            <label>Password</label>
-            <input id="password">
-            <label>Address</label>
-            <input id="address">
-            <button type="button" onclick="registerUser()">Submit</button>
-        </form>
-        <p id="registrationMessage"></p>
-
-    </div>
-
-    <div id="login">
-        <h1>Login</h1>
-        <form>
-            <label>Username</label>
-            <input id="usernameLog">
-            <label>Password</label>
-            <input id="passwordLog">
-            <button type="button" onclick="loginUser()">Submit</button>
-        </form>
-
-    </div>
-
-    <div id="comment">
-        <h2>Leave a comment:</h2>
+    <div>
+        <!--Add few elements to the form-->
+        <h1>BettaTech Sign Up Form</h1>
+        <div>
+            <input type="text" id="txtName" placeholder="Enter your name" />
+        </div>
+        <div>
+            <input type="text" id="txtAge" placeholder="Enter your age" />
+        </div>
+        <div>
+            <input type="text" id="txtEmail" placeholder="Enter your email address" />
+        </div>
+        <div>
+            <select id="selCountry">
+                <option selected value="">-- Choose the country --</option>
+                <option value="India">India</option>
+                <option value="Japan">Japan</option>
+                <option value="USA">USA</option>
+            </select>
+        </div>
+        <div>
+            <textarea id="msg" name="msg" placeholder="Write some message ..." style="height: 100px;"></textarea>
+        </div>
+        <div>
+            <input type="button" id="bt" value="Save data to file" onclick="saveFile()" />
+        </div>
     </div>
 </body>
-
-<footer>
-    <hr>
-    <p>Copyright 2022.</p>
-    <p id="version"></p>
-</footer>
-
-
-
 </html>
+
+
+
+
